@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="icon" href="img/game-controller.png">
+  <link rel="stylesheet" href="style.css">
+  <title>ПлейНаДом — аренда игровых приставок с доставкой</title>
+  <meta name="description"
+    content="Арендуйте PlayStation 5, Xbox Series X или Nintendo Switch на сутки, выходные или неделю. Привезём, настроим и заберём сами.">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header>
+    <div class="container">
+      <a class="logo" href="./">
+        <img src="img/game-controller.png" alt="" width="32" height="32">
+        <span>ПлейНаДом</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+
+      <nav id="site-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#catalog">Приставки</a></li>
+          <li><a href="#how">Как это работает</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+          <li><a href="#booking">Арендовать</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Игровая приставка на выходные — без покупки</h1>
+          <p class="hero-lead">
+            Привезём PlayStation 5, Xbox Series X или Nintendo Switch с двумя
+            геймпадами и играми, настроим у вас дома и заберём в конце срока.
+            Аренда от 1 суток.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#catalog-title">Выбрать приставку</a>
+            <a href="tel:+79990000000">Позвонить: +7 (999) 000-00-00</a>
+          </div>
+        </div>
+
+        <ul class="hero-facts">
+          <li>
+            <strong>От 600 ₽ в сутки</strong>
+            <span>Nintendo Switch. Остальные приставки — от 850 ₽</span>
+          </li>
+          <li>
+            <strong>Привезём и подключим</strong>
+            <span>Курьер настроит приставку у вас дома</span>
+          </li>
+          <li>
+            <strong>Ответим за 15 минут</strong>
+            <span>Подтвердим наличие и время доставки</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ПРАВКА 8: явный класс section--soft вместо nth-of-type(even) -->
+    <section id="catalog" class="section--soft" aria-labelledby="catalog-title">
+      <div class="container">
+        <h2 id="catalog-title">Какие приставки есть</h2>
+
+        <ul class="catalog">
+          <li>
+            <article>
+              <h3>PlayStation 5</h3>
+              <p class="price">900 ₽ в сутки</p>
+              <ul>
+                <li>2 геймпада DualSense</li>
+                <li>5 игр на выбор</li>
+                <li>Подходит для 4K-телевизоров</li>
+              </ul>
+              <!-- ПРАВКА 6: data-console — для выбора приставки в форме -->
+              <a class="button" href="#booking-title" data-console="ps5">
+                Арендовать<span class="visually-hidden"> PlayStation 5</span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Xbox Series X</h3>
+              <p class="price">850 ₽ в сутки</p>
+              <ul>
+                <li>2 геймпада</li>
+                <li>Game Pass на время аренды</li>
+                <li>Подходит для 4K-телевизоров</li>
+              </ul>
+              <a class="button" href="#booking-title" data-console="xbox">
+                Арендовать<span class="visually-hidden"> Xbox Series X</span>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Nintendo Switch</h3>
+              <p class="price">600 ₽ в сутки</p>
+              <ul>
+                <li>2 контроллера Joy-Con</li>
+                <li>Игры для компании и детей</li>
+                <li>Можно играть без телевизора</li>
+              </ul>
+              <a class="button" href="#booking-title" data-console="switch">
+                Арендовать<span class="visually-hidden"> Nintendo Switch</span>
+              </a>
+            </article>
+          </li>
+        </ul>
+        <p><a class="button" href="#booking-title">Оставить заявку</a></p>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 id="how-title">Как это работает</h2>
+        <ol>
+          <li>Оставляете заявку: выбираете приставку, срок и дату.</li>
+          <li>Мы перезваниваем в течение 15 минут и подтверждаем наличие.</li>
+          <li>Курьер привозит приставку и подключает её к вашему телевизору.</li>
+          <li>В последний день забираем всё обратно в удобное время.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ПРАВКА 8 -->
+    <section id="faq" class="section--soft" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title">Частые вопросы</h2>
+
+        <details>
+          <summary>Нужен ли залог?</summary>
+          <p>Да, залог возвращается сразу после проверки комплекта при возврате.</p>
+        </details>
+        <details>
+          <summary>Что если приставка сломается?</summary>
+          <p>Если неисправность не по вашей вине, заменим приставку в течение дня.</p>
+        </details>
+        <details>
+          <summary>Можно ли продлить аренду?</summary>
+          <p>Можно, если приставка не забронирована на следующие даты. Напишите или позвоните нам заранее.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-title">
+      <div class="container">
+        <h2 id="booking-title">Оставить заявку</h2>
+        <p id="form-hint">Перезвоним в течение 15 минут и подтвердим бронь.</p>
+
+        <form action="/rent" method="post" aria-describedby="form-hint" novalidate>
+
+          <fieldset>
+            <legend>Контакты</legend>
+
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" autocomplete="name" required minlength="2">
+            <p class="error" id="name-error" role="alert" hidden></p>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="18" required
+              aria-describedby="phone-hint">
+            <p class="hint" id="phone-hint">Например: +7 999 123-45-67</p>
+            <p class="error" id="phone-error" role="alert" hidden></p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Детали аренды</legend>
+
+            <label for="console">Приставка</label>
+            <select id="console" name="console" required>
+              <option value="">— выберите —</option>
+              <option value="ps5">PlayStation 5</option>
+              <option value="xbox">Xbox Series X</option>
+              <option value="switch">Nintendo Switch</option>
+            </select>
+            <p class="error" id="console-error" role="alert" hidden></p>
+
+            <label for="start">Дата начала аренды</label>
+            <input type="date" id="start" name="start" required>
+            <p class="error" id="start-error" role="alert" hidden></p>
+
+            <label for="address">Адрес доставки</label>
+            <input type="text" id="address" name="address" autocomplete="address-line1" required>
+            <p class="error" id="address-error" role="alert" hidden></p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Срок аренды</legend>
+
+            <label class="inline">
+              <input type="radio" name="period" value="1" checked>
+              1 сутки
+            </label>
+            <label class="inline">
+              <input type="radio" name="period" value="3">
+              3 суток (выходные)
+            </label>
+            <label class="inline">
+              <input type="radio" name="period" value="7">
+              Неделя
+            </label>
+          </fieldset>
+
+          <label class="inline">
+            <input type="checkbox" id="consent" name="consent" required>
+            <span>
+              Согласен на
+              <a href="privacy.html" target="_blank" rel="noopener">обработку персональных данных<span
+                  class="visually-hidden"> (откроется в новой вкладке)</span></a>
+            </span>
+          </label>
+
+          <p class="error" id="consent-error" role="alert" hidden></p>
+
+          <!-- ПРАВКА 1: два span вместо textContent, disabled вместо aria-disabled -->
+          <div>
+            <button class="button" type="submit">
+              <span class="btn-label">Отправить заявку</span>
+              <span class="btn-sending">Отправляем…</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- ПРАВКА 4: tabindex="-1" — для программного фокуса после успеха -->
+        <div role="status" aria-live="polite" id="form-status" tabindex="-1"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contacts">
+    <div class="container">
+      <h2>Контакты</h2>
+
+      <address>
+        <p>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
+        <p>Email: <a href="mailto:hello@playnadom.example">hello@playnadom.example</a></p>
+      </address>
+
+      <p>Принимаем заявки ежедневно с 10:00 до 22:00.</p>
+
+      <div class="footer-bottom">
+        <p>© 2026 ПлейНаДом. <a href="privacy.html">Политика конфиденциальности</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/game-controller" title="game controller icons">Game controller
+            icons created by Icon Mela - Flaticon</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
