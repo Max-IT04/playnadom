@@ -8,7 +8,6 @@
   const form = document.querySelector("#booking form");
   const status = document.getElementById("form-status");
   const submitBtn = form.querySelector('button[type="submit"]');
-  const startInput = document.getElementById("start");
   const phoneInput = document.getElementById("phone");
   const consoleSelect = document.getElementById("console"); // ПРАВКА 6
 
@@ -19,23 +18,7 @@
 
   let sending = false;
 
-  // ---------- 1. Минимальная и максимальная дата ----------
-  function toLocalISODate(date) {
-    const yyyy = date.getFullYear();
-    const mm = String(date.getMonth() + 1).padStart(2, "0");
-    const dd = String(date.getDate()).padStart(2, "0");
-    return `${yyyy}-${mm}-${dd}`;
-  }
-
-  const today = new Date();
-  startInput.min = toLocalISODate(today);
-
-  // ПРАВКА 2: max = сегодня + 90 дней
-  const maxDate = new Date();
-  maxDate.setDate(maxDate.getDate() + 90);
-  startInput.max = toLocalISODate(maxDate);
-
-  // ---------- 2. Маска телефона: +7 999 123-45-67 ----------
+  // ---------- 1. Маска телефона: +7 999 123-45-67 ----------
   function formatPhone(raw, isDeleting) {
     let digits = raw.replace(/\D/g, "");
 
@@ -64,7 +47,7 @@
     phoneInput.value = formatPhone(phoneInput.value, isDeleting);
   });
 
-  // ---------- 3. Тексты ошибок через field.validity ----------
+  // ---------- 2. Тексты ошибок через field.validity ----------
   const MESSAGES = {
     name: {
       valueMissing: "Введите имя",
@@ -75,15 +58,6 @@
     },
     console: {
       valueMissing: "Выберите приставку",
-    },
-    start: {
-      badInput: "Введите дату полностью",
-      valueMissing: "Выберите дату начала аренды",
-      rangeUnderflow: "Дата не может быть в прошлом",
-      rangeOverflow: "Дата не может быть позже чем через 90 дней", // ПРАВКА 2
-    },
-    address: {
-      valueMissing: "Введите адрес доставки",
     },
     consent: {
       valueMissing: "Нужно согласие на обработку персональных данных",
@@ -192,8 +166,6 @@
     name: "Имя",
     phone: "Телефон",
     console: "Приставка",
-    start: "Дата начала аренды",
-    address: "Адрес доставки",
     consent: "Согласие на обработку данных",
   };
 

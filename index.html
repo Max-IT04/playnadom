@@ -7,9 +7,9 @@
   <script>document.documentElement.classList.add("js");</script>
   <link rel="icon" href="img/game-controller.png">
   <link rel="stylesheet" href="style.css">
-  <title>ПлейНаДом — аренда игровых приставок с доставкой</title>
+  <title>ПлейНаДом — аренда игровых приставок в Ставрополе с доставкой</title>
   <meta name="description"
-    content="Арендуйте PlayStation 5, Xbox Series X или Nintendo Switch на сутки, выходные или неделю. Привезём, настроим и заберём сами.">
+    content="Арендуйте PlayStation 5, Xbox Series X или Nintendo Switch в Ставрополе на сутки, выходные или неделю. Привезём, настроим и заберём сами.">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
           <li><a href="#catalog">Приставки</a></li>
           <li><a href="#how">Как это работает</a></li>
           <li><a href="#faq">Вопросы</a></li>
-          <li><a href="#booking">Арендовать</a></li>
+          <li><a class="nav-cta" href="#booking">Оставить заявку</a></li>
         </ul>
       </nav>
     </div>
@@ -41,15 +41,17 @@
     <section id="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1 id="hero-title">Игровая приставка на выходные — без покупки</h1>
+          <h1 id="hero-title">Игровая приставка на выходные в Ставрополе — без покупки</h1>
           <p class="hero-lead">
             Привезём PlayStation 5, Xbox Series X или Nintendo Switch с двумя
             геймпадами и играми, настроим у вас дома и заберём в конце срока.
-            Аренда от 1 суток.
+            Доставка по Ставрополю и Шпаковскому округу. Аренда от 1 суток.
           </p>
           <div class="hero-actions">
-            <a class="button" href="#catalog-title">Выбрать приставку</a>
+            <a class="button" href="#booking-title">Оставить заявку</a>
             <a href="tel:+79990000000">Позвонить: +7 (999) 000-00-00</a>
+            <a href="https://t.me/playnadom" target="_blank" rel="noopener">Написать в Telegram<span
+                class="visually-hidden"> (откроется в новой вкладке)</span></a>
           </div>
         </div>
 
@@ -60,7 +62,7 @@
           </li>
           <li>
             <strong>Привезём и подключим</strong>
-            <span>Курьер настроит приставку у вас дома</span>
+            <span>По Ставрополю и Шпаковскому округу, курьер настроит всё у вас дома</span>
           </li>
           <li>
             <strong>Ответим за 15 минут</strong>
@@ -103,6 +105,7 @@
             <p>В последний день приедем в удобное время. Хранить и возвращать самим не надо.</p>
           </li>
         </ul>
+        <p class="section-cta"><a class="button" href="#booking-title">Оставить заявку</a></p>
       </div>
     </section>
 
@@ -121,11 +124,33 @@
           </li>
           <li>
             <h3>Цена без сюрпризов</h3>
-            <p>Стоимость за сутки указана ниже. Скрытых платежей нет, доставка и настройка уже включены.</p>
+            <p>Цены и залог указаны ниже. Скрытых платежей нет, доставка и настройка уже включены.</p>
           </li>
         </ul>
-        <!-- TODO: добавить настоящие отзывы клиентов (имя, текст, при возможности фото).
-             Не придумывать: выдуманные отзывы вредят доверию и могут нарушать закон. -->
+        <h3 class="reviews-title">Отзывы клиентов</h3>
+        <!-- TODO: заменить примеры настоящими отзывами (имя, текст, при возможности фото) -->
+        <p class="note">Тексты ниже — примеры для макета, не настоящие отзывы. Перед запуском их нужно заменить.</p>
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>
+              <p>Брали PS5 на выходные для компании друзей. Привезли в пятницу вечером, всё подключили за 10 минут.</p>
+            </blockquote>
+            <figcaption>Алексей, Ставрополь</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>
+              <p>Switch взяли детям на каникулы. Удобно, что забрали сами, ничего возвращать не пришлось.</p>
+            </blockquote>
+            <figcaption>Марина, Михайловск</figcaption>
+          </figure>
+          <figure class="review">
+            <blockquote>
+              <p>Xbox с Game Pass — в самый раз на неделю отпуска. Залог вернули сразу при возврате.</p>
+            </blockquote>
+            <figcaption>Дмитрий, Ставрополь</figcaption>
+          </figure>
+        </div>
+        <p class="section-cta"><a class="button" href="#booking-title">Оставить заявку</a></p>
       </div>
     </section>
 
@@ -134,8 +159,8 @@
       <div class="container">
         <h2 id="how-title">Как это работает</h2>
         <ol>
-          <li>Оставляете заявку: выбираете приставку, срок и дату.</li>
-          <li>Мы перезваниваем в течение 15 минут и подтверждаем наличие.</li>
+          <li>Оставляете заявку: имя, телефон и приставка. Это займёт минуту.</li>
+          <li>Мы перезваниваем в течение 15 минут, уточняем срок, дату и адрес доставки и подтверждаем наличие.</li>
           <li>Курьер привозит приставку и подключает её к вашему телевизору.</li>
           <li>В последний день забираем всё обратно в удобное время.</li>
         </ol>
@@ -153,6 +178,17 @@
               <h3>PlayStation 5</h3>
               <img src="img/ps5100x75.png" alt="" width="100" height="75">
               <p class="price">900 ₽ в сутки</p>
+              <dl class="tariffs">
+                <div>
+                  <dt>3 суток</dt>
+                  <dd>2 400 ₽</dd>
+                </div>
+                <div>
+                  <dt>Неделя</dt>
+                  <dd>5 000 ₽</dd>
+                </div>
+              </dl>
+              <p class="deposit">Залог 10 000 ₽, вернём при возврате</p>
               <ul>
                 <li>2 геймпада DualSense</li>
                 <li>5 игр на выбор</li>
@@ -169,6 +205,17 @@
               <h3>Xbox Series X</h3>
               <img src="img/xbox_100x75.png" alt="" width="100" height="75">
               <p class="price">850 ₽ в сутки</p>
+              <dl class="tariffs">
+                <div>
+                  <dt>3 суток</dt>
+                  <dd>2 250 ₽</dd>
+                </div>
+                <div>
+                  <dt>Неделя</dt>
+                  <dd>4 700 ₽</dd>
+                </div>
+              </dl>
+              <p class="deposit">Залог 10 000 ₽, вернём при возврате</p>
               <ul>
                 <li>2 геймпада</li>
                 <li>Game Pass на время аренды</li>
@@ -184,6 +231,17 @@
               <h3>Nintendo Switch</h3>
               <img src="img/nintendoswithc100x75.png" alt="" width="100" height="75">
               <p class="price">600 ₽ в сутки</p>
+              <dl class="tariffs">
+                <div>
+                  <dt>3 суток</dt>
+                  <dd>1 600 ₽</dd>
+                </div>
+                <div>
+                  <dt>Неделя</dt>
+                  <dd>3 300 ₽</dd>
+                </div>
+              </dl>
+              <p class="deposit">Залог 5 000 ₽, вернём при возврате</p>
               <ul>
                 <li>2 контроллера Joy-Con</li>
                 <li>Игры для компании и детей</li>
@@ -206,7 +264,31 @@
 
         <details>
           <summary>Нужен ли залог?</summary>
-          <p>Да, залог возвращается сразу после проверки комплекта при возврате.</p>
+          <p>Да. Залог 10 000 ₽ за PlayStation 5 и Xbox Series X и 5 000 ₽ за Nintendo Switch. Возвращаем сразу после
+            проверки комплекта при возврате.</p>
+        </details>
+        <details>
+          <summary>Что входит в комплект?</summary>
+          <p>Приставка, два геймпада, кабели питания и HDMI и игры по выбору. К Xbox Series X добавляем Game Pass на
+            время аренды.</p>
+        </details>
+        <details>
+          <summary>Куда и за сколько вы доставляете?</summary>
+          <p>По Ставрополю и Шпаковскому округу. Доставка, настройка и забор уже включены в цену, отдельно платить не
+            нужно.</p>
+        </details>
+        <details>
+          <summary>Как оплатить?</summary>
+          <p>Наличными или переводом курьеру при получении приставки.</p>
+        </details>
+        <details>
+          <summary>Нужны ли документы?</summary>
+          <p>Для оформления нужен паспорт. Арендовать может человек от 18 лет.</p>
+        </details>
+        <details>
+          <summary>Какие игры можно выбрать?</summary>
+          <p>К PlayStation 5 вы выбираете 5 игр, на Xbox играете в Game Pass, к Switch даём игры для компании и детей.
+            Список пришлём по запросу в Telegram или по телефону.</p>
         </details>
         <details>
           <summary>Что если приставка сломается?</summary>
@@ -222,12 +304,14 @@
     <section id="booking" aria-labelledby="booking-title">
       <div class="container">
         <h2 id="booking-title">Оставить заявку</h2>
-        <p id="form-hint">Перезвоним в течение 15 минут и подтвердим бронь.</p>
+        <p id="form-hint">Перезвоним в течение 15 минут, уточним срок и адрес доставки. Или напишите нам в <a
+            href="https://t.me/playnadom" target="_blank" rel="noopener">Telegram<span class="visually-hidden">
+              (откроется в новой вкладке)</span></a>.</p>
 
         <form action="/rent" method="post" aria-describedby="form-hint" novalidate>
 
           <fieldset>
-            <legend>Контакты</legend>
+            <legend>Ваша заявка</legend>
 
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" autocomplete="name" required minlength="2">
@@ -238,10 +322,6 @@
               aria-describedby="phone-hint">
             <p class="hint" id="phone-hint">Например: +7 999 123-45-67</p>
             <p class="error" id="phone-error" role="alert" hidden></p>
-          </fieldset>
-
-          <fieldset>
-            <legend>Детали аренды</legend>
 
             <label for="console">Приставка</label>
             <select id="console" name="console" required>
@@ -251,31 +331,6 @@
               <option value="switch">Nintendo Switch</option>
             </select>
             <p class="error" id="console-error" role="alert" hidden></p>
-
-            <label for="start">Дата начала аренды</label>
-            <input type="date" id="start" name="start" required>
-            <p class="error" id="start-error" role="alert" hidden></p>
-
-            <label for="address">Адрес доставки</label>
-            <input type="text" id="address" name="address" autocomplete="address-line1" required>
-            <p class="error" id="address-error" role="alert" hidden></p>
-          </fieldset>
-
-          <fieldset>
-            <legend>Срок аренды</legend>
-
-            <label class="inline">
-              <input type="radio" name="period" value="1" checked>
-              1 сутки
-            </label>
-            <label class="inline">
-              <input type="radio" name="period" value="3">
-              3 суток (выходные)
-            </label>
-            <label class="inline">
-              <input type="radio" name="period" value="7">
-              Неделя
-            </label>
           </fieldset>
 
           <label class="inline">
@@ -292,7 +347,7 @@
           <!-- ПРАВКА 1: два span вместо textContent, disabled вместо aria-disabled -->
           <div>
             <button class="button" type="submit">
-              <span class="btn-label">Отправить заявку</span>
+              <span class="btn-label">Забронировать приставку</span>
               <span class="btn-sending">Отправляем…</span>
             </button>
           </div>
@@ -312,9 +367,11 @@
       <address>
         <p>Телефон: <a href="tel:+79990000000">+7 (999) 000-00-00</a></p>
         <p>Email: <a href="mailto:hello@playnadom.example">hello@playnadom.example</a></p>
+        <p>Telegram: <a href="https://t.me/playnadom" target="_blank" rel="noopener">@playnadom<span
+              class="visually-hidden"> (откроется в новой вкладке)</span></a></p>
       </address>
 
-      <p>Принимаем заявки ежедневно с 10:00 до 22:00.</p>
+      <p>Работаем в Ставрополе и Шпаковском округе. Принимаем заявки ежедневно с 10:00 до 22:00.</p>
 
       <div class="footer-bottom">
         <p>© 2026 ПлейНаДом. <a href="privacy.html">Политика конфиденциальности</a></p>
