@@ -197,7 +197,13 @@ nav ul {
 /* ---------- hero ---------- */
 #hero {
   padding-block: calc(var(--section-pad) * 1.5);
-  background: var(--ink);
+  /* тёмная подложка поверх фото, чтобы белый текст читался на любом участке */
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(rgb(20 33 61 / 0.8), rgb(20 33 61 / 0.8)),
+    url("img/hero-img.png");
+  background-size: cover;
+  background-position: center;
   color: var(--on-dark);
 }
 .hero-grid {
@@ -428,6 +434,38 @@ footer :focus-visible {
   font-size: 0.9rem;
 }
 
+/* ---------- боль / решение / доверие ---------- */
+.pain-list {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pain-list li {
+  padding-left: var(--space-4);
+  border-left: 4px solid var(--error);
+}
+
+.benefits {
+  display: grid;
+  gap: var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.benefits li {
+  padding-top: var(--space-4);
+  border-top: 4px solid var(--accent);
+}
+.benefits h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.25rem;
+}
+.benefits p {
+  margin: 0;
+}
+
 /* от 768px */
 @media (min-width: 768px) {
   :root {
@@ -452,8 +490,12 @@ footer :focus-visible {
     border-left: 1px solid var(--line-on-dark);
   }
 
-  .catalog {
+  .catalog,
+  .benefits {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .pain-list {
+    grid-template-columns: 1fr 1fr;
   }
   .price {
     font-size: clamp(1.375rem, 2.2vw, 1.75rem);
